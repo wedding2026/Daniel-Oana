@@ -1,0 +1,564 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    background-color: rgb(250, 241, 227);
+}
+.back1{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 241, 227, 0);
+    background-image: url(images/flori-s.png), url(images/flori-d.png);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw 25vh;
+    height: 100vh;
+    width: 100vw;
+}
+.text-principal {
+    font-size: 2vh;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    font-family: "CormorantGaramond-Italic-VariableFont_wght";
+}
+.back2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/fundaltimer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+      -webkit-filter: drop-shadow(5px 5px 50px #000000);
+  filter: drop-shadow(5px 5px 5px #000000);
+    width: 35vw;
+    justify-self: center;
+    align-self: center;
+}
+.content-timer{
+    text-shadow: -3px 0px #000000, -4px 0px #000000;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    text-align: center;
+    font-size: calc(1rem + 1.5vw);
+    padding: 10px;
+    font-family: GreatVibes-Regular;
+}
+.countdown2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8vw;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+.back3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100vw;
+}
+.cb3{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.text-sus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-size:0.9rem;
+    font-family: CormorantGaramond-VariableFont_wght;
+}
+.citat{
+    text-align: center;
+    font-family: Parisienne-Regular;
+}
+.container-poze {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vh;
+}
+.container-b, .container-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 60vh;
+}
+.img-b, .img-r{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.text-b, .text-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    text-wrap: wrap;
+    font-family: CormorantGaramond-Italic-VariableFont_wght;
+}
+.text-cununie, .text-petrecere {
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+.vezi-peharta-s, .vezi-peharta-d{
+    background-color: #6b6b6b;
+    padding: 12px 12px;
+    border-radius: 35px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: CormorantGaramond-Italic-VariableFont_wght;
+}
+.back4{
+    background-image: url(images/submit-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.confirma-prezenta{
+     text-shadow: -3px 0px #000000, -4px 0px #000000;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #52525273;
+    border-radius: 40px;
+    padding: 12px 24px;
+    font-family: Parisienne-Regular;
+}
+.m-s{
+     text-shadow: -3px 0px #000000, -4px 0px #000000;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Parisienne-Regular;
+}
+.cp{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/*NavBar*/
+.navbar {
+  width: 100%;
+  height: 2.5vh;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3); /* semitransparent alb */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* chenar alb semitransparent */
+  backdrop-filter: blur(0px); /* efect de sticlă mată */
+  border-radius: 20px;
+  z-index: 999;
+  padding: 10px 50000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*NavBar List*/
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap:9vw;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Parisienne-Regular";
+  font-weight: bold;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(rem, 1vw, 3rem);
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #b6b6b6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: CormorantGaramond-Italic-VariableFont_wght;
+    src: url(Fonts/CormorantGaramond-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: CormorantGaramond-VariableFont_wght;
+    src: url(Fonts/CormorantGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: GreatVibes-Regular;
+    src: url(Fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(Fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: Parisienne-Regular;
+    src: url(Fonts/Parisienne-Regular.ttf);
+}
+
+@media (max-width:379px) {
+
+    .back4{
+        background-position: 50% center;
+    }
+    .back3{
+        justify-content: center;
+    }
+        .back1{
+        background-size: 100vw 18vh;
+    }
+            .back2{
+        background-position: 42% center;
+    }
+}
+@media (min-width:380px) {
+    .img-b, .img-r{
+        width: 8rem;
+        height: 8rem;
+    }
+    .text-b, .text-r{
+        font-size: 1.2rem;
+    }
+    .container-b, .container-r{
+        justify-content: space-between;
+        height: 67vh;
+    }
+    .container-poze{
+        width: 100vw;
+        height: 40vh;
+    }
+    .text-sus{
+        height: 25vh;
+        justify-content: center;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .cb3{
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .back4{
+        background-position: 50% center;
+    }
+    .back1{
+        background-size: 100vw 18vh;
+    }
+        .back2{
+        background-position: 42% center;
+    }
+}
+@media (min-width:800px) and (max-width:1024px) {
+    .back1{
+        background-image: none;
+        background-image: url(images/flori-s.png), url(images/flori-d.png);
+        background-position: top, bottom;
+        background-size: 100vw 25vh;
+        background-repeat: no-repeat;
+    }
+    .logo {
+        width: 20rem;
+    }
+    .content-timer{
+            font-size: calc(1rem + 2vw);
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+    }
+    .countdown2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .container-b, .container-r{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 45vh;
+    }
+    .img-b, .img-r{
+        width: 15rem;
+        height: 15rem;
+    }
+    .container-poze{
+        width: 100%;
+        height: 45vh;
+    }
+    .cb3{
+        justify-content: space-around;
+    }
+    .nav-list{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width:1025px) {
+    .back1{
+        background-image: none;
+        background-image: url(images/fs.png), url(images/fd.png);
+        background-position: left, right;
+        background-size: 35vw 100vh;
+        background-repeat: no-repeat;
+    }
+    .logo {
+        width: 20rem;
+    }
+    .content-timer{
+            font-size: calc(1rem + 2vw);
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+    }
+    .countdown2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .container-b, .container-r{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 45vh;
+    }
+    .img-b, .img-r{
+        width: 15rem;
+        height: 15rem;
+    }
+    .container-poze{
+        width: 100%;
+        height: 45vh;
+    }
+    .cb3{
+        justify-content: space-around;
+    }
+    .nav-list{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width:1921px){
+    .nav-list{
+        font-size: 1.5rem;
+        gap: 12rem;
+    }
+    .container-poze{
+        width: 100vw;
+        height: 50vh;
+    }
+    .container-b, .container-r{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-b, .img-r{
+        width: 25rem;
+        height: 25rem;
+    }
+    .text-sus{
+        font-size: 2rem;
+    }
+    .text-b, .text-r{
+        font-size: 2rem;
+    }
+    .confirma-prezenta{
+        font-size: 3rem;
+    }
+
+}
+/*LANDSCAPE*/
+@media (max-height:750px) and (orientation: landscape) {
+    .content-timer{
+        font-size: 1.5rem;
+    }
+    .countdown2{
+        gap: 5rem;
+    }
+    .logo{
+        width: 40%;
+    }
+    .cb3{
+        justify-content: space-around;
+    }
+    .container-b, .container-r{
+        width: 48vw;
+        background-color: #6b6b6b1a;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        grid-template-rows: 0.4fr 0.2fr;
+
+    }
+    .vezi-peharta-d, .vezi-peharta-s{
+        justify-self: center;
+    }
+    .img-b, .img-r{
+        width: calc(8em + 1vw);
+        height: calc(8rem + 1vh);
+        align-self: center;
+        padding: 10px;
+    }
+    .text-b, .text-r{
+        font-size: 0.6rem;
+    }
+    .back1{
+        background-image: url(images/fd.png), url(images/fs.png);
+        background-size: 30vw 100vh;
+        background-position: right, left;
+    }
+    .text-principal{
+        font-size: 0.9rem;
+    }
+}
+@media (max-height:870px) and (orientation: landscape) {
+    .content-timer{
+        font-size: 1rem;
+    }
+    .countdown2{
+        gap: 3rem;
+        font-size: 1.3rem;
+    }
+    .logo{
+        width: 40%;
+    }
+    .cb3{
+        justify-content: space-around;
+    }
+    .container-b, .container-r{
+        width: 48vw;
+        height: calc(13rem + 2vh);
+        background-color: #6b6b6b1a;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 0.5fr 0.2fr;
+
+    }
+    .container-poze{
+        justify-content: space-evenly;
+    }
+    .vezi-peharta-d, .vezi-peharta-s{
+        justify-self: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .img-b, .img-r{
+        width: calc(8em + 1vw);
+        height: calc(8rem + 1vh);
+        align-self: flex-start;
+        justify-self: center;
+        padding: 10px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .text-b, .text-r{
+        font-size: 1rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    .text-sus{
+        font-size: 0.8rem;
+    }
+    .m-s{
+        font-size: 0.6rem;
+    }
+    }
+
+    @media (max-height:366px) and (orientation: landscape) {
+    .content-timer{
+        font-size: 1rem;
+    }
+    .countdown2{
+        gap: 3rem;
+        font-size: 1.3rem;
+    }
+    .logo{
+        width: 40%;
+    }
+    .cb3{
+        justify-content: flex-start;
+    }
+    .container-b, .container-r{
+        width: 48vw;
+        height: calc(12rem + 2vh);
+        background-color: #44434313;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 0.5fr 0.2fr;
+
+    }
+    .container-poze{
+        justify-content: space-evenly;
+    }
+    .vezi-peharta-d, .vezi-peharta-s{
+        justify-self: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .img-b, .img-r{
+        width: calc(8em + 1vw);
+        height: calc(8rem + 1vh);
+        align-self: flex-start;
+        padding: 10px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .text-b, .text-r{
+        font-size: 1rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    .text-sus{
+        font-size: 0.6rem;
+    }
+    .m-s{
+        font-size: 0.6rem;
+    }
+    .vezi-peharta-d, .vezi-peharta-s{
+        font-size: 0.6rem;
+    }
+}
