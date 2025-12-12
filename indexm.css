@@ -212,7 +212,7 @@ body{
 }
 
 .nav-list li a:hover {
-  color: #b6b6b6;
+  color: #000000;
 }
 
 html {
@@ -562,3 +562,4 @@ html {
         font-size: 0.6rem;
     }
 }
+
